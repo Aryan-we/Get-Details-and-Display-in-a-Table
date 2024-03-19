@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Details and Display in a Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+        <form autocomplete="off">
+        <div class="inputfield">NAME  :&nbsp;<input id="name" type="text" placeholder="Enter Name"></div>
+        <div class="inputfield">AGE &nbsp;&nbsp;&nbsp;:&nbsp;<input id="age" type="number" min="1" max="100" placeholder="Enter Age"></div>
+        <div class="inputfield">GRADE  :&nbsp;<select id="grade" type="text" placeholder="Enter Grade">
+            <option>Enter Grade</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+            
+        </select>
+        </form></div>
+        <button id="entry" onclick="displayDetails()">Input Entry</button>
+        <button id="clear" onclick="clearDetails()">Clear</button>
+    </div>
+
+    </div>
+    <table id="display"">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GRADE</th>
+        </tr>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
